@@ -3,8 +3,8 @@ class Solution:
         logs.sort(key=lambda a: a[1])
         q = sorted((v, i) for i, v in enumerate(queries))
 
-        ans = [0] * len(queries)
         count = [0] * (n + 1)
+        ans = [0] * len(queries)
         left = right = active = 0
 
         for time, idx in q:
